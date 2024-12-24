@@ -21,7 +21,7 @@ Aplicação desenvolvida para o Curso RocketSeat referente ao módulo de Respons
 <p align="center">
   <img alt="Preview do projeto desenvolvido." src="https://i.imgur.com/f1KpXnS.png" width="60%">
   <br><br>
-  <img alt="Preview em versão mobile" src="https://i.imgur.com/o6O7GDa.png" width="60%">
+  <img alt="Preview em versão mobile" src="https://i.imgur.com/o6O7GDa.png" width="30%">
 </p>
 
 
