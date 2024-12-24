@@ -1,0 +1,52 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --brand-color: #EF5F4C;
+    --bg-color: #FFFFFF;
+    --surface-color: #F5F5F5;
+    --skeleton-color: #D9D9D9;
+    --shape-transparency: hsla(0, 0%, 100%, 0.564);
+
+    --text-color-primary: #313131;
+    --text-color-secondary: #6c6c6c;
+
+    --ff-poppins: "Poppins", serif;
+    --p-md: normal .875rem/1.70 var(--ff-poppins);
+    --p-sm: normal .75rem/1.70 var(--ff-poppins);
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font: 700 2rem/1.25 var(--ff-poppins);
+}
+
+body, html {
+    background-color: var(--bg-color);
+    color: var(--text-color-primary);
+
+}
+
+.container {
+    --max-width: 375px;
+    width: min(var(--max-width), 100% - 1.75rem * 2);
+    margin-inline: auto;
+}
+
+@media (width >= 80em){
+    .container {
+        --max-width: 80em;
+    }
+}

@@ -1,0 +1,106 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding-block: 1.75rem;
+
+    gap: 1rem;
+
+    & a:hover {
+        color: var(--brand-color);
+    }
+
+    & img {
+        vertical-align: middle;
+        object-fit: cover;
+    }
+
+    & div + img:hover {
+        background: url(../images/icon/MagnifyingGlassHover.svg) no-repeat center;
+    }
+
+    & div:nth-child(1) {
+        margin-right: auto;
+
+    }
+}
+
+header {
+    
+    & ul {
+        padding-block: 1rem;
+        list-style: none;
+
+        & img {
+            vertical-align: middle;
+        }
+    }
+}
+
+#profile {
+    display: flex;
+    flex-wrap: wrap;
+
+    & div {
+        & h1 {
+            padding-block: 1rem;
+        }
+
+        & p {
+            justify-content: space-between;
+        }
+    }
+}
+
+
+@media (width >= 80em) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        
+        padding-block: 1.75rem;
+    
+        gap: 1rem;
+    }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #profile {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            gap: 2rem;
+        }
+
+        #profile > div {
+            max-width: 24rem;
+        }
+
+        #profile h1 {
+            color: var(--text-color-primary);
+            margin-bottom: .5rem;
+        }
+
+        #profile p {
+            font: var(--p-md);
+        }
+
+        #info {
+            display: flex;
+            flex-direction: column;
+
+            gap: .5rem;
+            width: 17.5rem;
+            font: var(--p-sm);
+            color: var(--text-color-primary);
+        }
+}
